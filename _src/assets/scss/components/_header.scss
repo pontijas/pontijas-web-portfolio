@@ -2,22 +2,38 @@
   &__container {
     padding: 1.5rem 3rem;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
   &__menu {
-    width: 50%;
+    width: 100%;
   }
   &__list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: center;
   }
   &__link {
     text-decoration: none;
+    margin-right: 1rem;
   }
-  &__img {
-    height: 50px;
+  &__logo {
+    height: 2.5rem;
+    margin-left: 1rem;
   }
 }
+
+// responsive
+
+// .header {
+//   &__container {
+//     padding: 1.5rem 3rem;
+//     display: flex;
+//     flex-flow: row nowrap;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
