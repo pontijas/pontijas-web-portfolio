@@ -1,5 +1,25 @@
 .footer {
   &__container {
     padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+}
+
+// responsive
+
+@media all and (min-width: 768px) {
+  .footer {
+    &__container {
+      padding: 1.5rem 3rem;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+    }
   }
 }
