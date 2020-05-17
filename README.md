@@ -4,4 +4,5 @@ Hi!
 
 Welcome to my portfolio.
 
--Responsive Design.
+- Responsive Design.
+- Mobile first.
