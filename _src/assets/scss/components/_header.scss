@@ -14,6 +14,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: space-evenly;
   }
   &__link {
@@ -37,6 +38,9 @@
       justify-content: space-between;
       align-items: center;
     }
+    &__list {
+      justify-content: flex-start;
+    }
     &__logo {
       display: block;
       height: 2.5rem;
@@ -55,6 +59,9 @@
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
+    }
+    &__list {
+      justify-content: flex-start;
     }
     &__logo {
       display: block;
