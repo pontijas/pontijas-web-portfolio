@@ -1,13 +1,23 @@
 .header {
   &__container {
-    padding: 1.5rem 3rem;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
     display: flex;
-    flex-flow: row-reverse;
+    flex-direction: column;
+  }
+  &__box {
+    width: 100%;
+  }
+  &__header {
+    display: flex;
+    flex-flow: row;
     justify-content: space-between;
     align-items: center;
   }
+  &__hamburguer {
+    height: 1.75rem;
+  }
   &__menu {
-    width: 100%;
     font-size: 0.8rem;
   }
   &__list {
@@ -15,15 +25,34 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: space-between;
   }
   &__link {
     text-decoration: none;
     margin: 0 0.8rem;
   }
   &__logo {
-    display: none;
+    // display: none;
     height: 2rem;
+  }
+  &__title {
+    margin-top: 2rem;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+  }
+  &__small-1 {
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, rgba(0, 211, 255, 1) 20%, rgba(31, 255, 0, 1) 66%, rgba(255, 230, 0, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__small-2 {
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, rgba(255, 205, 0, 1) 0%, rgba(255, 0, 198, 1) 43%, rgba(0, 185, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -33,20 +62,25 @@
   .header {
     &__container {
       padding: 1.5rem 3rem;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
     }
     &__list {
       justify-content: flex-start;
     }
     &__logo {
-      display: block;
       height: 2.5rem;
     }
     &__menu {
       font-size: 1rem;
+    }
+    &__title {
+      font-family: $titleFont;
+      font-size: 3rem;
+    }
+    &__small-1 {
+      font-size: 3rem;
+    }
+    &__small-2 {
+      font-size: 3rem;
     }
   }
 }
@@ -69,6 +103,16 @@
     }
     &__menu {
       font-size: 1.25rem;
+    }
+    &__title {
+      font-family: $titleFont;
+      font-size: 3.5rem;
+    }
+    &__small-1 {
+      font-size: 3.5rem;
+    }
+    &__small-2 {
+      font-size: 3.5rem;
     }
   }
 }
