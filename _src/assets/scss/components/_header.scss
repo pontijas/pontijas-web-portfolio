@@ -35,25 +35,6 @@
     // display: none;
     height: 2rem;
   }
-  &__title {
-    margin-top: 6rem;
-    font-family: $titleFont;
-    font-size: 1.5rem;
-  }
-  &__small-1 {
-    font-family: $titleFont;
-    font-size: 1.5rem;
-    background: linear-gradient(90deg, rgba(0, 211, 255, 1) 20%, rgba(31, 255, 0, 1) 66%, rgba(255, 230, 0, 1) 88%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  &__small-2 {
-    font-family: $titleFont;
-    font-size: 1.5rem;
-    background: linear-gradient(90deg, rgba(255, 205, 0, 1) 0%, rgba(255, 0, 198, 1) 43%, rgba(0, 185, 255, 1) 88%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 }
 
 // responsive
@@ -74,16 +55,6 @@
     }
     &__menu {
       font-size: 1rem;
-    }
-    &__title {
-      font-family: $titleFont;
-      font-size: 3rem;
-    }
-    &__small-1 {
-      font-size: 3rem;
-    }
-    &__small-2 {
-      font-size: 3rem;
     }
   }
 }
@@ -106,16 +77,6 @@
     }
     &__menu {
       font-size: 1.25rem;
-    }
-    &__title {
-      font-family: $titleFont;
-      font-size: 3.5rem;
-    }
-    &__small-1 {
-      font-size: 3.5rem;
-    }
-    &__small-2 {
-      font-size: 3.5rem;
     }
   }
 }

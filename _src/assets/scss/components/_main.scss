@@ -11,6 +11,25 @@
     padding: 5rem 0.5rem;
     color: white;
   }
+  &__title {
+    margin-top: 6rem;
+    font-family: $titleFont;
+    font-size: 1.5rem;
+  }
+  &__small-1 {
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #00d3ff 20%, #1fff00 66%, #ffcd00 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__small-2 {
+    font-family: $titleFont;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ffcd00 0%, #ff00c6 43%, #00b9ff 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .project {
@@ -56,18 +75,35 @@
     flex-direction: column;
     align-items: center;
   }
-  &__title {
-    font-family: $titleFont;
-    margin-bottom: 2rem;
-    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 198, 1) 43%, rgba(129, 0, 255, 1) 88%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   &__slogan {
     font-family: $titleFont;
     font-size: 2.5rem;
     margin-bottom: 5rem;
   }
+  &__small-1 {
+    font-family: $titleFont;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #ff0000 0%, #ff00c6 43%, #8100ff 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__small-2 {
+    font-family: $titleFont;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #8100ff 0%, #ff00c6 43%, #ff0000 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__title {
+    font-family: $titleFont;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #8100ff 45%, #3700ff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &__img-box {
     position: relative;
   }
@@ -81,28 +117,68 @@
     font-size: 0.8rem;
     text-align: justify;
   }
-  // &__border {
-  //   position: absolute;
-  //   height: 12.5rem;
-  //   margin-left: -1.5rem;
-  //   margin-top: -1rem;
-  //   z-index: -0;
-  // }
 }
 
-// grid
+.skills {
+  &__container {
+    // display: block;
+    padding: 5rem 2rem;
+  }
+  &__article-1 {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__article-2 {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+  }
+  &__article-3 {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  &__arrow {
+    width: 1.5rem;
+    margin-right: 1rem;
+  }
+  &__title {
+    margin-right: 2rem;
+  }
+}
 
 // responsive
 
 @media all and (min-width: 768px) {
+  .main {
+    &__title {
+      font-family: $titleFont;
+      font-size: 3rem;
+    }
+    &__small-1 {
+      font-size: 3rem;
+    }
+    &__small-2 {
+      font-size: 3rem;
+    }
+  }
   .project {
     &__img {
       width: 19rem;
-      // box-shadow: 1px 2px 6px 2px #7d7d7d;
     }
   }
   .about {
     &__slogan {
+      font-size: 3.5rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+    &__small-1 {
+      font-size: 3.5rem;
+    }
+    &__small-2 {
       font-size: 3.5rem;
     }
   }
@@ -117,15 +193,35 @@
 }
 
 @media all and (min-width: 1200px) {
+  .main {
+    &__title {
+      font-family: $titleFont;
+      font-size: 3.5rem;
+    }
+    &__small-1 {
+      font-size: 3.5rem;
+    }
+    &__small-2 {
+      font-size: 3.5rem;
+    }
+  }
   .project {
     &__img {
       width: 20rem;
-      // box-shadow: 1px 2px 6px 2px #7d7d7d;
     }
   }
   .about {
     &__slogan {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
+    }
+    &__small-1 {
+      font-size: 4.5rem;
+    }
+    &__small-2 {
+      font-size: 4.5rem;
+    }
+    &__text {
+      font-size: 1rem;
     }
   }
   .grid {
