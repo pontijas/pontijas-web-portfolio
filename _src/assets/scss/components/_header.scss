@@ -15,7 +15,7 @@
     align-items: center;
   }
   &__hamburguer {
-    height: 1.75rem;
+    height: 1.45rem;
   }
   &__menu {
     font-size: 0.8rem;
@@ -36,7 +36,7 @@
     height: 2rem;
   }
   &__title {
-    margin-top: 2rem;
+    margin-top: 6rem;
     font-family: $titleFont;
     font-size: 1.5rem;
   }
@@ -68,6 +68,9 @@
     }
     &__logo {
       height: 2.5rem;
+    }
+    &__hamburguer {
+      height: 1.75rem;
     }
     &__menu {
       font-size: 1rem;
