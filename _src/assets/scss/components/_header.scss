@@ -3,7 +3,6 @@
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
-    // background-image: url(../../circle.png);
   }
   &__box {
     width: 100%;
@@ -13,6 +12,7 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
   }
   &__hamburguer {
     height: 1.45rem;
