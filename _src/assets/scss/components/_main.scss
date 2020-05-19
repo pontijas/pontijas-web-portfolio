@@ -38,11 +38,12 @@
   }
   &__img {
     width: 17.5rem;
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
     margin-bottom: 1rem;
     &:hover {
-      background-image: url(../../pattern-black.png);
-      background-size: 15rem;
+      background-image: url(../../pattern-img.png);
+      background-size: 21.5rem;
       background-position: right;
       background-repeat: no-repeat;
     }
