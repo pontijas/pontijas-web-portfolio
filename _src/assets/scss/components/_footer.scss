@@ -6,9 +6,44 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: 1.2rem;
+  }
+  &__title {
+    font-family: $titleFont;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(90deg, #00d3ff 35%, #1fff00 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   &__contact {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__location {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  &__icon {
+    height: 1.5rem;
+  }
+  &__text {
+    display: block;
+    text-transform: capitalize;
+    margin: 1.5rem 0.5rem;
+  }
+  &__email {
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  &__socialmed {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
@@ -22,6 +57,7 @@
   }
   &__credits {
     height: 2rem;
+    font-size: 0.65rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
