@@ -103,9 +103,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  &__img-box {
-    position: relative;
-  }
   &__portrait {
     height: 12.5rem;
     z-index: 0;
@@ -116,7 +113,8 @@
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
   }
-  &__sidetext {
+  &__link {
+    text-decoration: none;
     width: 60vw;
     font-size: 0.5rem;
     margin-bottom: 1.5rem;
@@ -146,10 +144,10 @@
   }
   &__arrow {
     width: 1.5rem;
-    margin-right: 1rem;
   }
   &__title {
     margin-right: 2rem;
+    margin-left: 2rem;
     text-transform: capitalize;
   }
 }
@@ -178,14 +176,34 @@
     &__slogan {
       font-size: 3.5rem;
     }
-    &__text {
-      font-size: 1rem;
-    }
     &__small-1 {
       font-size: 3.5rem;
     }
     &__small-2 {
       font-size: 3.5rem;
+    }
+    &__title {
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.15rem;
+    }
+    &__link {
+      font-size: 1rem;
+    }
+  }
+  .skills {
+    &__article-1 {
+      font-size: 1.15rem;
+    }
+    &__article-2 {
+      font-size: 1.15rem;
+    }
+    &__article-3 {
+      font-size: 1.15rem;
+    }
+    &__arrow {
+      width: 1.75rem;
     }
   }
   .grid {
@@ -226,8 +244,28 @@
     &__small-2 {
       font-size: 4.5rem;
     }
+    &__title {
+      font-size: 2.25rem;
+    }
     &__text {
-      font-size: 1rem;
+      font-size: 1.25rem;
+    }
+    &__link {
+      font-size: 1.15rem;
+    }
+  }
+  .skills {
+    &__article-1 {
+      font-size: 1.25rem;
+    }
+    &__article-2 {
+      font-size: 1.25rem;
+    }
+    &__article-3 {
+      font-size: 1.25rem;
+    }
+    &__arrow {
+      width: 2rem;
     }
   }
   .grid {
