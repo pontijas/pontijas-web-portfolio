@@ -1,7 +1,5 @@
 'use strict';
 
-console.log('holi mundi');
-
 const menuBtn = document.querySelector('.js-btn');
 const displayMenu = document.querySelector('.js-menu');
 const logoBtn = document.querySelector('.js-logo');
@@ -15,4 +13,4 @@ function showTitle() {
 }
 
 menuBtn.addEventListener('click', showMenu);
-logoBtn.addEventListener('click', showTitle);
+logoBtn.addEventListener('mouseover', showTitle);
