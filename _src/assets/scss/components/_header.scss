@@ -13,6 +13,7 @@
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    // position: relative;
   }
   &__hamburguer {
     height: 1.45rem;
@@ -51,7 +52,9 @@
   &__title {
     font-family: $titleFont;
     font-size: 0.85rem;
-    margin-top: 2.5rem;
+    // margin-top: -2.35rem;
+    position: relative;
+    top: -2.5rem;
     text-align: center;
   }
   &__small {
@@ -68,7 +71,7 @@
 }
 
 .title-hidden {
-  display: none;
+  visibility: hidden;
 }
 
 // responsive
