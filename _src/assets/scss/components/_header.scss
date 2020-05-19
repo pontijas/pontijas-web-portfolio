@@ -3,6 +3,7 @@
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
+    // background-image: url(../../circle.png);
   }
   &__box {
     width: 100%;
@@ -33,6 +34,14 @@
     text-decoration: none;
     color: inherit;
     margin: 0 0.8rem;
+    padding: 1rem 0;
+    display: inline-block;
+    &:hover {
+      background-image: url(../../cross.png);
+      background-size: 1.5rem;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
   }
   &__logo {
     height: 2rem;
