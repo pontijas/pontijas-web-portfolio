@@ -19,6 +19,10 @@
     height: 1.45rem;
     &:hover {
       cursor: pointer;
+      background-image: url(../../circle-pink-1.png);
+      background-size: 1.5rem;
+      background-position: left;
+      background-repeat: no-repeat;
     }
   }
   &__menu {
@@ -56,6 +60,11 @@
     position: relative;
     top: -2.5rem;
     text-align: center;
+    animation-name: vanish;
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: unset;
   }
   &__small {
     font-size: 0.8rem;
@@ -127,5 +136,16 @@
     &__small {
       font-size: 2.25rem;
     }
+  }
+}
+
+// animation
+
+@keyframes vanish {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
   }
 }
