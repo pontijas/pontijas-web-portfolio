@@ -68,9 +68,16 @@
     align-items: center;
   }
   &__link {
+    padding: 1rem 0;
     margin-left: 1rem;
     text-decoration: none;
     color: inherit;
+    &:hover {
+      background-image: url(../../cross-blue.png);
+      background-size: 1.25rem;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
   }
   &__arrow {
     width: 1.5rem;
