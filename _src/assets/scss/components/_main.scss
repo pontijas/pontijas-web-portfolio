@@ -139,6 +139,8 @@
   }
 }
 
+// collapsible
+
 .collapsible {
   &__container {
     // display: block;
@@ -197,10 +199,11 @@
   }
 }
 
-// collapsible
-
 .collapsible__open .collapsible__content {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  font-size: 0.75em;
 }
 .collapsible__open .collapsible__arrow {
   transform: rotate(90deg);
@@ -209,16 +212,18 @@
   transform: rotate(-90deg);
 }
 
-// javascript
-
-// .collapsible {
-//   &__arrow {
-//     transform: rotate(90deg);
-//   }
-//   &__content {
-//     display: block;
-//   }
-// }
+.skills {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+}
 
 // responsive
 
@@ -260,7 +265,7 @@
       font-size: 1rem;
     }
   }
-  .skills {
+  .collapsible {
     &__article-1 {
       font-size: 1.15rem;
     }
@@ -277,9 +282,22 @@
   .grid {
     &__container {
       display: grid;
-      // grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
       column-gap: 4rem;
+    }
+  }
+  .collapsible__open .collapsible__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    font-size: 0.75em;
+  }
+  .skills {
+    &__icon {
+      height: 4rem;
+    }
+    &__item {
+      font-size: 1rem;
     }
   }
 }
@@ -299,7 +317,7 @@
   }
   .project {
     &__img {
-      width: 20rem;
+      width: 35rem;
     }
   }
   .about {
@@ -322,7 +340,7 @@
       font-size: 1.15rem;
     }
   }
-  .skills {
+  .collapsible {
     &__article-1 {
       font-size: 1.25rem;
     }
@@ -339,9 +357,21 @@
   .grid {
     &__container {
       display: grid;
-      // grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       column-gap: 3.5rem;
+    }
+  }
+  .collapsible__open .collapsible__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+  .skills {
+    &__icon {
+      height: 4.5rem;
+    }
+    &__item {
+      font-size: 1.25rem;
     }
   }
 }

@@ -5,8 +5,6 @@ const displayMenu = document.querySelector('.js-menu');
 const logoBtn = document.querySelector('.js-logo');
 const displayTitle = document.querySelector('.js-title');
 const collapsibleTrigger = document.querySelectorAll('.js-trigger');
-// const arrow = document.querySelector('.skills__arrow');
-// const content = document.querySelector('.skills__content');
 
 function showMenu() {
   displayMenu.classList.toggle('menu-hidden');
@@ -16,10 +14,15 @@ function showTitle() {
 }
 
 function updateTrigger(event) {
-  console.log('holiiiiiii', event.currentTarget.parentElement);
   let currentCollapsible = event.currentTarget.parentElement;
-  // arrow.classList.toggle('collapsible__arrow');
-  currentCollapsible.classList.toggle('collapsible__open');
+  if (currentCollapsible.classList.contains('collapsible__open')) {
+    currentCollapsible.classList.remove('collapsible__open');
+  } else {
+    for (const item of collapsibleTrigger) {
+      item.parentElement.classList.remove('collapsible__open');
+    }
+    currentCollapsible.classList.add('collapsible__open');
+  }
 }
 
 for (const item of collapsibleTrigger) {
@@ -27,4 +30,4 @@ for (const item of collapsibleTrigger) {
 }
 
 menuBtn.addEventListener('click', showMenu);
-logoBtn.addEventListener('mouseover', showTitle);
+logoBtn.addEventListener('click', showTitle);
