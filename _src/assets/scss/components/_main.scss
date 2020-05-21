@@ -148,16 +148,37 @@
     margin: 2.5rem 0;
     display: flex;
     flex-flow: row nowrap;
+    cursor: pointer;
+    &:hover {
+      background-image: url(../../circle-red.png);
+      background-size: 2.5rem;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
   }
   &__article-2 {
     margin: 2.5rem 0;
     display: flex;
     flex-flow: row-reverse nowrap;
+    cursor: pointer;
+    &:hover {
+      background-image: url(../../circle-red.png);
+      background-size: 2.5rem;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
   }
   &__article-3 {
     margin: 2.5rem 0;
     display: flex;
     flex-flow: row nowrap;
+    cursor: pointer;
+    &:hover {
+      background-image: url(../../circle-red.png);
+      background-size: 2.5rem;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
   }
   &__arrow {
     width: 1.5rem;
@@ -166,6 +187,21 @@
     margin-right: 2rem;
     margin-left: 2rem;
     text-transform: capitalize;
+  }
+  &__content {
+    display: none;
+    list-style: none;
+  }
+}
+
+// javascript
+
+.collapsible {
+  &__arrow {
+    transform: rotate(90deg);
+  }
+  &__content {
+    display: block;
   }
 }
 
