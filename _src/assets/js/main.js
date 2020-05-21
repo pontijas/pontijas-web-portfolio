@@ -5,8 +5,8 @@ const displayMenu = document.querySelector('.js-menu');
 const logoBtn = document.querySelector('.js-logo');
 const displayTitle = document.querySelector('.js-title');
 const collapsibleTrigger = document.querySelectorAll('.js-trigger');
-const arrow = document.querySelector('.skills__arrow');
-const content = document.querySelector('.skills__content');
+// const arrow = document.querySelector('.skills__arrow');
+// const content = document.querySelector('.skills__content');
 
 function showMenu() {
   displayMenu.classList.toggle('menu-hidden');
@@ -19,7 +19,7 @@ function updateTrigger(event) {
   console.log('holiiiiiii', event.currentTarget.parentElement);
   let currentCollapsible = event.currentTarget.parentElement;
   // arrow.classList.toggle('collapsible__arrow');
-  currentCollapsible.classList.toggle('collapsible__content');
+  currentCollapsible.classList.toggle('collapsible__open');
 }
 
 for (const item of collapsibleTrigger) {

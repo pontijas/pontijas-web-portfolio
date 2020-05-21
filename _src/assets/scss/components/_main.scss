@@ -139,7 +139,7 @@
   }
 }
 
-.skills {
+.collapsible {
   &__container {
     // display: block;
     padding: 5rem 2rem;
@@ -183,27 +183,42 @@
   &__arrow {
     width: 1.5rem;
   }
+  &__arrow-r {
+    width: 1.5rem;
+  }
   &__title {
     margin-right: 2rem;
     margin-left: 2rem;
     text-transform: capitalize;
   }
   &__content {
-    display: none;
     list-style: none;
+    display: none;
   }
+}
+
+// collapsible
+
+.collapsible__open .collapsible__content {
+  display: block;
+}
+.collapsible__open .collapsible__arrow {
+  transform: rotate(90deg);
+}
+.collapsible__open .collapsible__arrow-r {
+  transform: rotate(-90deg);
 }
 
 // javascript
 
-.collapsible {
-  &__arrow {
-    transform: rotate(90deg);
-  }
-  &__content {
-    display: block;
-  }
-}
+// .collapsible {
+//   &__arrow {
+//     transform: rotate(90deg);
+//   }
+//   &__content {
+//     display: block;
+//   }
+// }
 
 // responsive
 
