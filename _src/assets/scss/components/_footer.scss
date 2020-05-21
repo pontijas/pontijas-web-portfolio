@@ -8,18 +8,7 @@
     align-items: center;
     font-size: 1.2rem;
   }
-  &__arrow {
-    transform: rotate(-90deg);
-    height: 1.5rem;
-    margin-bottom: 4.5rem;
-    &:hover {
-      cursor: pointer;
-      background-image: url(../../circle-pink-1.png);
-      background-size: 1.5rem;
-      background-position: right;
-      background-repeat: no-repeat;
-    }
-  }
+
   &__title {
     font-family: $titleFont;
     font-size: 2.5rem;
@@ -29,10 +18,12 @@
     -webkit-text-fill-color: transparent;
   }
   &__contact {
+    height: 100vh;
     padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   &__location {
     display: flex;
@@ -59,6 +50,18 @@
       background-image: url(../../cross-green.png);
       background-size: 1.5rem;
       background-position: left;
+      background-repeat: no-repeat;
+    }
+  }
+  &__arrow {
+    transform: rotate(-90deg);
+    height: 1.5rem;
+    margin-top: 4.5rem;
+    &:hover {
+      cursor: pointer;
+      background-image: url(../../circle-pink-1.png);
+      background-size: 1.5rem;
+      background-position: right;
       background-repeat: no-repeat;
     }
   }
