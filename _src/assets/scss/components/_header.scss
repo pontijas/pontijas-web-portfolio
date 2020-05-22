@@ -1,11 +1,8 @@
 .header {
   &__container {
-    padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
-  }
-  &__box {
-    width: 100%;
+    justify-content: center;
   }
   &__header {
     height: 3rem;
@@ -55,15 +52,9 @@
   &__title {
     font-family: $titleFont;
     font-size: 0.65rem;
-    // margin-top: -2.35rem;
     position: relative;
     top: -2rem;
     text-align: center;
-    animation-name: vanish;
-    animation-delay: 1.5s;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-direction: unset;
   }
   &__small {
     font-size: 0.8rem;
@@ -87,7 +78,7 @@
 @media all and (min-width: 768px) {
   .header {
     &__container {
-      padding: 1.5rem 3rem;
+      padding: 1rem 2.5rem;
     }
     &__list {
       justify-content: flex-start;
@@ -112,13 +103,6 @@
 
 @media all and (min-width: 1200px) {
   .header {
-    &__container {
-      padding: 1.5rem 3rem;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
-    }
     &__list {
       justify-content: flex-start;
     }
@@ -135,16 +119,5 @@
     &__small {
       font-size: 2.25rem;
     }
-  }
-}
-
-// animation
-
-@keyframes vanish {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0;
   }
 }

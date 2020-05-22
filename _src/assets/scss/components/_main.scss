@@ -316,6 +316,7 @@
       width: 19rem;
     }
   }
+
   .about {
     &__slogan {
       font-size: 3.5rem;
@@ -354,7 +355,7 @@
     &__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      // column-gap: 4rem;
+      column-gap: 2rem;
     }
     &__item-1 {
       grid-row: 1/2;
@@ -411,6 +412,14 @@
       &:hover {
         background-size: 37.5rem;
       }
+    }
+  }
+  .contact {
+    &__container {
+      font-size: 1.5rem;
+    }
+    &__title {
+      font-size: 3.5rem;
     }
   }
   .about {

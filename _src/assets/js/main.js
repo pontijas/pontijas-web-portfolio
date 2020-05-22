@@ -8,9 +8,19 @@ const collapsibleTrigger = document.querySelectorAll('.js-trigger');
 
 function showMenu() {
   displayMenu.classList.toggle('menu-hidden');
+  if (displayTitle.classList.contains('menu-hidden')) {
+    displayMenu.classList.remove('menu-hidden');
+  } else {
+    displayTitle.classList.add('title-hidden');
+  }
 }
 function showTitle() {
-  displayTitle.classList.toggle('title-hidden');
+  // displayTitle.classList.toggle('title-hidden');
+  if (displayMenu.classList.contains('menu-hidden')) {
+    displayTitle.classList.remove('title-hidden');
+  } else {
+    displayTitle.classList.add('title-hidden');
+  }
 }
 
 function updateTrigger(event) {
