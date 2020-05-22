@@ -1,16 +1,14 @@
 .footer {
   &__container {
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: space-between;
-    margin: 1.5rem 0;
-    padding: 0 1rem;
   }
   &__socialmed {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
+    margin-bottom: 1rem;
   }
   &__item {
     margin: 0 0.25rem;
@@ -37,6 +35,8 @@
       flex-flow: row-reverse nowrap;
       justify-content: space-between;
       align-items: center;
+      margin: 1.5rem 0;
+      padding: 0 1rem;
     }
     &__credits {
       display: flex;
@@ -53,6 +53,8 @@
       flex-flow: row-reverse nowrap;
       justify-content: space-between;
       align-items: center;
+      margin: 1.5rem 0;
+      padding: 0 2rem;
     }
     &__credits {
       display: flex;
