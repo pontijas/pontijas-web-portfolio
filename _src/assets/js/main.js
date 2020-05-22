@@ -7,21 +7,19 @@ const displayTitle = document.querySelector('.js-title');
 const collapsibleTrigger = document.querySelectorAll('.js-trigger');
 
 function showMenu() {
-  // displayMenu.classList.toggle('menu-hidden');
-  // si el titulo esta escondido y el menú está escondido
   if (displayTitle.classList.contains('title-hidden') && displayMenu.classList.contains('menu-hidden')) {
-    // me enseñas el menú
     displayMenu.classList.remove('menu-hidden');
   } else {
-    // el resto del tiempo me escondes el título
     displayTitle.classList.add('title-hidden');
+    displayMenu.classList.toggle('menu-hidden');
   }
 }
 function showTitle() {
-  if (displayMenu.classList.contains('menu-hidden')) {
+  if (!displayMenu.classList.contains('menu-hidden')) {
+    displayMenu.classList.add('menu-hidden');
     displayTitle.classList.remove('title-hidden');
-  } else if (!displayMenu.classList.contains('menu-hidden')) {
-    displayTitle.classList.add('title-hidden');
+  } else {
+    displayTitle.classList.toggle('title-hidden');
   }
 }
 
