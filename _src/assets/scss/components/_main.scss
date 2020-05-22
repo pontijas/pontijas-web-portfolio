@@ -38,9 +38,9 @@
   }
   &__img {
     width: 17.5rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+    padding-right: 0.35rem;
+    padding-top: 0.35rem;
+    margin-bottom: 0.35rem;
     &:hover {
       background-image: url(../../pattern-img.png);
       background-size: 20.5rem;
@@ -313,7 +313,7 @@
   }
   .project {
     &__img {
-      width: 19rem;
+      width: 19.5rem;
     }
   }
 
@@ -383,7 +383,7 @@
   }
   .skills {
     &__icon {
-      height: 4rem;
+      height: 3.25rem;
     }
     &__item {
       font-size: 1rem;
@@ -485,10 +485,10 @@
   }
   .skills {
     &__icon {
-      height: 4.5rem;
+      height: 3.5rem;
     }
     &__item {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
     }
   }
 }
